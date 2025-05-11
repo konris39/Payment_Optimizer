@@ -54,4 +54,4 @@ paymentmethods.json:
 ...
 ]
 ```
-
+(You can check out example orders.json and paymentmethods.json files in src/main/resources)
