@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class PaymentReadTest {
 
     @Test
-    void read_valid_JsonFile_parsesMethods() throws IOException {
+    void read_validJsonFile_parsesMethods() throws IOException {
         String json = """
             [
               { "id": "PUNKTY", "discount": "15", "limit": "100,00" },
@@ -38,7 +38,7 @@ class PaymentReadTest {
     }
 
     @Test
-    void decrease_Limit_when_Over_Limit_throwsIllegalArgument() {
+    void decreaseLimit_whenOverLimit_throwsIllegalArgument() {
         PaymentMethod pm = new PaymentMethod("C1", "10", "5.00");
         IllegalArgumentException ex = assertThrows(
                 IllegalArgumentException.class,

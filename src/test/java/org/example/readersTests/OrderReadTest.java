@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class OrderReadTest {
 
     @Test
-    void read_valid_JsonFile_parsesOrders() throws IOException {
+    void read_validJsonFile_parsesOrders() throws IOException {
         String json = """
             [
               { "id": "Order1", "value": "221.45", "promotions": ["prom1","niceProm"] },
